@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuizSphere — L'univers du quiz intelligent</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">Q</span>
+      <div>
+        <h1>QuizSphere</h1>
+        <p>Le quiz façon Kahoot + IA, missions, boutique & personnalisation</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#modes">Modes</a>
+      <a href="#ia">IA</a>
+      <a href="#missions">Missions</a>
+      <a href="#boutique">Boutique</a>
+      <a href="#personnalisation">Personnalisation</a>
+      <button class="btn ghost" id="toggleTheme">Thème</button>
+      <button class="btn">Se connecter</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h2>Crée, anime et fais évoluer tes quiz en temps réel.</h2>
+        <p>
+          QuizSphere combine les mécaniques de Kahoot avec une IA copilote, des missions hebdo, une boutique
+          d'objets virtuels, et une personnalisation avancée pour les salles et avatars.
+        </p>
+        <div class="hero-actions">
+          <button class="btn primary">Créer un quiz</button>
+          <button class="btn ghost">Rejoindre une partie</button>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="stat">+120k</span>
+            <span class="label">Salles animées</span>
+          </div>
+          <div>
+            <span class="stat">98%</span>
+            <span class="label">Engagement moyen</span>
+          </div>
+          <div>
+            <span class="stat">4.9★</span>
+            <span class="label">Avis enseignants</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Configuration express</h3>
+        <div class="card-row">
+          <span>Mode</span>
+          <select>
+            <option>Classique</option>
+            <option>Battle Royale</option>
+            <option>Coop Missions</option>
+            <option>Escape Quiz</option>
+          </select>
+        </div>
+        <div class="card-row">
+          <span>Durée question</span>
+          <input type="range" min="5" max="45" value="20" />
+        </div>
+        <div class="card-row">
+          <span>Bonus</span>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <button class="btn primary full">Lancer la session</button>
+        <p class="hint">Code de salle : <strong>QS-4582</strong></p>
+      </div>
+    </section>
+
+    <section id="modes" class="section">
+      <div class="section-title">
+        <h3>Modes de jeu & options avancées</h3>
+        <p>Toutes les options d'un quiz interactif, enrichies pour garder l'audience engagée.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h4>Tableau de scores dynamique</h4>
+          <p>Classement en direct, badges de vitesse, streaks, et effets sonores personnalisables.</p>
+        </article>
+        <article class="card">
+          <h4>Multi-formats</h4>
+          <p>QCM, vrai/faux, glisser-déposer, estimation, image cliquable, audio, vidéo.</p>
+        </article>
+        <article class="card">
+          <h4>Contrôle de classe</h4>
+          <p>Verrouillage des réponses, pause pédagogique, focus mode et filtres anti-triche.</p>
+        </article>
+        <article class="card">
+          <h4>Analytics détaillés</h4>
+          <p>Rapports exportables, progression par élève, temps de réponse et difficulté adaptative.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="ia" class="section alt">
+      <div class="section-title">
+        <h3>IA copilote intégrée</h3>
+        <p>Génère, améliore et personnalise tes quiz en quelques secondes.</p>
+      </div>
+      <div class="ai-panel">
+        <div class="ai-box">
+          <h4>Génération rapide</h4>
+          <ul>
+            <li>Importer un PDF, vidéo ou site web.</li>
+            <li>Proposer des questions par niveau.</li>
+            <li>Adapter le ton (fun, académique, compétition).</li>
+          </ul>
+          <button class="btn">Lancer l'IA</button>
+        </div>
+        <div class="ai-box">
+          <h4>Assistant temps réel</h4>
+          <ul>
+            <li>Indices automatiques si blocage.</li>
+            <li>Traduction instantanée multilingue.</li>
+            <li>Suggestions d'explication après chaque question.</li>
+          </ul>
+          <button class="btn ghost">Activer en live</button>
+        </div>
+        <div class="ai-box">
+          <h4>Création d'avatars</h4>
+          <ul>
+            <li>Génération IA d'avatars stylisés.</li>
+            <li>Voix de narrateur IA.</li>
+            <li>Backgrounds animés personnalisés.</li>
+          </ul>
+          <button class="btn">Créer un avatar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="missions" class="section">
+      <div class="section-title">
+        <h3>Missions & progression</h3>
+        <p>Encourage la régularité avec des objectifs quotidiens, hebdos et événements saisonniers.</p>
+      </div>
+      <div class="missions">
+        <div class="mission">
+          <div>
+            <h4>Mission quotidienne</h4>
+            <p>Lancer un quiz de 10 questions avec 80% de réussite.</p>
+          </div>
+          <span class="badge">+150 XP</span>
+        </div>
+        <div class="mission">
+          <div>
+            <h4>Mission hebdo</h4>
+            <p>Inviter 3 collègues et partager 2 quiz publics.</p>
+          </div>
+          <span class="badge purple">+2 skins</span>
+        </div>
+        <div class="mission">
+          <div>
+            <h4>Événement saisonnier</h4>
+            <p>Pack “Retour à l'école” avec thème, musiques et effets dédiés.</p>
+          </div>
+          <span class="badge gold">+500 pièces</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="boutique" class="section alt">
+      <div class="section-title">
+        <h3>Boutique & économie virtuelle</h3>
+        <p>Débloque des thèmes, power-ups, récompenses et packs de questions premium.</p>
+      </div>
+      <div class="grid">
+        <article class="shop-card">
+          <h4>Pack Hologramme</h4>
+          <p>Thème futuriste + sons immersifs.</p>
+          <div class="shop-footer">
+            <span>1200 pièces</span>
+            <button class="btn ghost">Acheter</button>
+          </div>
+        </article>
+        <article class="shop-card">
+          <h4>Boost XP</h4>
+          <p>Double l'XP pendant 24h.</p>
+          <div class="shop-footer">
+            <span>400 pièces</span>
+            <button class="btn ghost">Activer</button>
+          </div>
+        </article>
+        <article class="shop-card">
+          <h4>Banque de questions IA</h4>
+          <p>Accès illimité aux questions générées.</p>
+          <div class="shop-footer">
+            <span>Abonnement</span>
+            <button class="btn ghost">Découvrir</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="personnalisation" class="section">
+      <div class="section-title">
+        <h3>Personnalisation poussée</h3>
+        <p>Crée une expérience unique pour chaque public.</p>
+      </div>
+      <div class="customization">
+        <div class="custom-card">
+          <h4>Thèmes & ambiance</h4>
+          <p>Choisis les couleurs, musiques, transitions et animations de la salle.</p>
+          <div class="palette">
+            <span class="swatch" data-color="#6C63FF"></span>
+            <span class="swatch" data-color="#23D18B"></span>
+            <span class="swatch" data-color="#FFB347"></span>
+            <span class="swatch" data-color="#FF6B6B"></span>
+          </div>
+        </div>
+        <div class="custom-card">
+          <h4>Avatars & identités</h4>
+          <p>Ajoute des accessoires, effets de particules et slogans personnalisés.</p>
+          <button class="btn ghost">Éditer mon avatar</button>
+        </div>
+        <div class="custom-card">
+          <h4>Règles de jeu</h4>
+          <p>Crée des règles spéciales : coopération, sabotage, ou équipes asymétriques.</p>
+          <button class="btn ghost">Créer un mode</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <h3>Prêt à lancer ton prochain quiz ?</h3>
+      <p>Démo gratuite, sans installation. Invite instantanée et statistiques en un clic.</p>
+      <div class="hero-actions">
+        <button class="btn primary">Démarrer gratuitement</button>
+        <button class="btn ghost">Plan Éducation</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 QuizSphere. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="#">Conditions</a>
+      <a href="#">Confidentialité</a>
+      <a href="#">Support</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
